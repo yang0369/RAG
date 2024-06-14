@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Run RAG",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/project/src/vector_db/build_slr_vector_db.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/project",
+            }
+        }
+    ]
+}
