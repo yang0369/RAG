@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "chat-trial"
+version = "0.1.0"
+description = ""
+authors = ["yang_kewen <yangkewenvigorous@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pydash = "^8.0.3"
+pymilvus = "^2.4.4"
+pathlib = "^1.0.1"
+tqdm = "^4.66.4"
+sentence-transformers = "^3.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

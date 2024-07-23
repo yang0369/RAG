@@ -1,0 +1,16 @@
+{
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/project",
+        "${workspaceFolder}/transformers/src",
+        "${workspaceFolder}/unilm/layoutlmft/layoutlmft"],  // set pylance paths, default import paths
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/project"
+    ],
+
+    // flake8 linting ref: https://github.com/microsoft/vscode-flake8
+    "flake8.enabled": true,
+    "flake8.args": ["--select", "E20,E21,E22,E23,E24,E3,F401,F8", "--ignore", "E226"] // equivalent to writing at .flake8 file, but it is prefered as this does auto-refresh
+}
